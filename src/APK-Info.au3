@@ -9,6 +9,7 @@
 #AutoIt3Wrapper_Res_LegalCopyright=zoster,CHEF-KOCH
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #pragma compile(AutoItExecuteAllowed True)
+
 #include <Constants.au3>
 #include <EditConstants.au3>
 #include <GUIConstantsEx.au3>
@@ -54,8 +55,8 @@ Local $aCmdLine = _WinAPI_CommandLineToArgv($CmdLineRaw)
 
 $Inidir= @ScriptDir & "\"
 
-$ProgramVersion="0.7M"
-$ProgramReleaseDate="17.04.2016"
+$ProgramVersion="1.0"
+$ProgramReleaseDate="12.05.2016"
 
 ; Check OS language
 $OS_language=@OSLang
@@ -412,7 +413,7 @@ If $ShowLog= "1" then
 	IniWrite($Inidir & $IniLogReport, "Icon", "TempFilePath", $tempPath);
 	IniWrite($Inidir & $IniLogReport, "Icon", "ApkIconeName", $apk_IconName);
 Endif
-	; resize always the bigger icon to 48x48 pixels
+	; Resize always the bigger icon to 48x48 pixels
 $hImage   = _GDIPlus_ImageResize ($hImage_original, 48, 48)
 $type = VarGetType($hImage)
 ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $type = ' & $type & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
