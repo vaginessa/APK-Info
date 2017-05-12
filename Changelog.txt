@@ -1,0 +1,100 @@
+**************************************************** APK-Info Functions
+- Support up to SDK23 (Marshamallow)- To add future SDK don't require program changes because is defined in external ini file.
+- Multilanguage GUI (ca/de/en/fa/fr/hu/id/it/nl/pl/sk/sp/zh-cn). It's possible add new language without program change, but hust editing external INI file.
+- Automatic recognition of OS language and set the right GUI language (en/fr/hu/id/it/pl/sk)
+- Option in configuration file to force a specific GUI language
+- Option in configuration file to define pre and post filename characters
+- Automatic log of the operation (that can be disabled via external ini file)
+- Windows shell integration (optional)
+
+
+***************************************************** APK-Info Changelog
+** 22.09.2015
+APK-Info 0.7b
+- Update aapt (Build tool)
+- Multilanguage (show APK-Info.ini)
+- Added option to select Prefix/suffix characters for file renaming (check APK-Info.ini)
+- Added option to enable/disable show OSLangCode (for help in translation)
+- If anyone want to show the program in specific language please edit english strings in APK-Info.ini and post here the specific language 
+
+
+** 07.12.2015
+APK-Info 0.7C
+- Replace appt.exe with new version compatible with SDK23 (Android 6.x)
+
+
+** 08.12.2015
+APK-Info 0.7D
+- Fixed problem about SK 21/22/23.
+- Made also some changes to the app.
+- The strings about program GUI are moved from APK-Info.ini to APK-Info-GUI-strings.ini
+- The APK-Info.ini file now contain just program settings (and not strings)
+- DI fixed the proble related to read FilenamePrefix/Suffix in APK.Info.ini.
+- Added automatic sk language recognition.
+- Fixed the problem about recognize SDK21/22/23 Android OS name.
+* Problem not solved
+- Recognize apk file name with chinese characters. 
+
+** 09.12.2015
+APK-Info 0.7E
+Solved problem recognizing KK (SDK 19).
+Increase Window width (for text space)
+- Add option in APK.-Info.ini to enable special language not detected automatically
+- Fix problem regarding batch run with APK-Info [PthtoINIfile] [APpFilename.apk]
+- Add Slovak language file
+- Add French language file.
+Note: The language file should be in UTF16 for special characters.
+- Add program option in APK-Info.ini to show command line parameters.
+More detail in Readme.txt text file.
+
+
+** 12.12.2015
+APK-Info 0.7G
+- Added hungarian strings (thanks to gidano)
+- Change GUI strings name (APK-Info-GUI.ini). Text file format UTF16.
+- Add strings in APK-Info-GUI.ini for SDK version and code name. Now to add a new SDK detection is not required change to program code.
+- Add OS Language code detction table in APK-GUI.ini. Now to add a new language detection is not required change to program cdoe.
+
+
+** 18.12.2015
+APK-Info 0.7H
+- Fix problem about big icon (now is always max 48x48piexls)
+- Fixed a problem regarding Browse command that didn't update filename
+- Know problems
+- Using special character (ex. japanese) for filename/app name are not supported
+- Using browser command to load another apk, the icon didn't change.
+- Added indonesian translation (thanks to exodius48)
+
+
+** 20.12.10215
+APK-Info 0.7I
+Changelog
+* Fix
+1. Fix rename function
+* Improvements
+Enable use of new variable in APK-Info.ini. ShowLog=1 (default).
+It replace use in ini file of variables like ShowCmdline and ShowUILanguage (now by default it save this kind of info in APK-Info-Log.ini)
+ShowLog enables to save in APK-Info-Log.ini many info about variable use internally from the program/OS language info/path used etc.
+* Know problem
+- If you load a new file from Browse the icon remain unchanged.
+- If the filename or app name use character like japanese are not supported. 
+
+
+** 23.01.2016
+APK-Info 0.7K
+- Added polish translation (thanks to Eselter).
+
+
+** 29.01.2016
+APK-Info 0.7L
+- Added spanish language (thanks to Ksawery).
+- Added chinese language (thanks to Li Guiquan).
+
+
+** 17.04.2016
+APK-Info 0.7M
+- Added Dansk language (thanks to mosu).
+- Added Farsi language (thanks to HesamEdin).
+- Added French language (thanks to VSO Sofwtare)
+- Added German language (thanks to mosu)
+- Updated aapt (Android Build Tool) to 23.0.3

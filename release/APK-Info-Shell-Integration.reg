@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.apk]
+@="APK-Info"
+
+[HKEY_CLASSES_ROOT\APK-Info\shell\APKInfo]
+@="APK Info"
+
+[HKEY_CLASSES_ROOT\APK-Info\shell\APKInfo\command]
+@="\"D:\\Temp\\APK-Info\\APK-Info.exe\" \"D:\\Temp\\APK-Info" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.apk]
+@="APK-Info"
+
+[HKEY_CURRENT_USER\Software\Classes\APK-Info\shell\APKInfo]
+@="APK Info"
+
+[HKEY_CURRENT_USER\Software\Classes\APK-Info\shell\APKInfo\command]
+@="\"D:\\Temp\\APK-Info\\APK-Info.exe\" \"D:\\Temp\\APK-Info" \"%1\""
