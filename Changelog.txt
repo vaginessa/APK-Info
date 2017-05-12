@@ -1,4 +1,5 @@
-**************************************************** APK-Info Functions
+APK-Info Functions
+===================
 - Support up to SDK23 (Marshamallow)- To add future SDK don't require program changes because is defined in external ini file.
 - Multilanguage GUI (ca/de/en/fa/fr/hu/id/it/nl/pl/sk/sp/zh-cn). It's possible add new language without program change, but hust editing external INI file.
 - Automatic recognition of OS language and set the right GUI language (en/fr/hu/id/it/pl/sk)
@@ -8,7 +9,8 @@
 - Windows shell integration (optional)
 
 
-***************************************************** APK-Info Changelog
+APK-Info Changelog
+===================
 ** 22.09.2015
 APK-Info 0.7b
 - Update aapt (Build tool)
